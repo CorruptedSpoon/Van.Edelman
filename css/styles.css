@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+	background-color: #252120;
+	text-align: center;
+}
+h1, h2, h3{
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(238, 172, 119);
+}
+p{
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+h1{
+	color: #A92f41;
+	font-size: 2.5rem;
+}
+h2{
+	font-size: 2rem;
+}
+h3{
+	font-size: 1.5rem;
+	color: #F5EFD5;
+}
+p{
+	font-size: 1.3rem;
+	color: #F5EFD5;
+	line-height: 150%;
+}
+a{
+	color: rgb(236, 220, 217);
+}
+a:hover{
+	color: #91C7A9;
+}
+.icon{
+	width: 5rem;
+}
+button{
+	border-radius: 8px;
+	font-size: 1.3rem;
+	background-color: #454140;
+	border: 0px;
+	padding: .5rem;
+	width: 10rem;
+	margin-right: 1rem;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+button:hover{
+	background-color: #555150;
+}
+button:hover a{
+	color: #91C7A9;
+}
+button a{
+	text-decoration: none;
+}
+#rounded {
+    border-radius: 40%;
+    border: 2px;
+	border-color: #E5DFC5;
+	width: 200px;
+}
+.backgroundDark{
+	width: 100%;
+	padding-bottom: 3rem;
+	margin: 0;
+	background-color: #171313;
+}
+#intro{
+	text-align: left;
+	width: 50%;
+	margin: auto;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#intro img{
+	margin-right: 1rem;
+}
+#introText{
+	display: flex;
+	flex-direction: column;
+}
+#introSec1{
+	display: flex;
+	align-items: center;
+}
+@media only screen and (max-width: 1600px) {
+	#introSec1{
+		flex-direction: column;
+	}
+	#introText{
+		text-align: center;
+	}
+	#intro{
+		justify-content: space-around;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	#intro{
+		width: 80%;
+	}
+}
+#about{
+	width: 40%;
+	margin: auto;
+	margin-top: 5rem;
+}
+#about{
+	text-align: center;
+}
+.technologies{
+	display: flex;
+	width: 70%;
+	margin: auto;
+	justify-content: space-around;
+}
+@media only screen and (max-width: 1200px) {
+	#about{
+		width: 70%;
+	}
+}
+.projectImg{
+	width: 23rem;
+	margin-bottom: 2rem;
+}
+#projects{
+	text-align: center;
+	margin: auto;
+	padding-top: 8rem;
+	margin-top: 7rem;
+	padding-bottom: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #171313;
+}
+.project{
+	margin-top: 2rem;
+	width: 66%;
+	padding: 2rem;
+	background-color: #252120;
+}
+.imgText{
+	display: flex;
+}
+.images{
+	width: 66%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 4rem;
+}
+.text{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 34%;
+	justify-content: left;
+	align-content: flex-start;
+}
+.text .technologies{
+	display: flex;
+	justify-content: left;
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.text .technologies img{
+	margin-right: 2rem;
+}
+.buttons{
+	display: flex;
+}
+@media only screen and (max-width: 1803px) {
+	.images{
+		width: 40%;
+	}
+	.text{
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 1500px){
+	.imgText{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.extra{
+		display: none;
+	}
+	.projectImg{
+		width: 100%;
+	}
+	.images{
+		width: 90%;
+		margin-right: 0;
+	}
+	.text{
+		width: 90%;
+	}
+	.text .technologies img{
+		margin: 0 1rem;
+	}
+	.text .technologies{
+		justify-content: center;
+	}
+	.buttons{
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 700px){
+	.images{
+		width: 100%;
+	}
+	.text{
+		width: 100%;
+	}
+	.project{
+		width: 90%;
+	}
+}
+footer{
+	padding: 2rem;
+}
